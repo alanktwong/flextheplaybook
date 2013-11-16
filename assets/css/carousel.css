@@ -71,6 +71,10 @@ body {
     line-height: 1;
 }
 
+#bookDetailsImage {
+	padding: 60px 60px 60px 60px;
+}
+
 @media (min-width: 768px) {
 
 	.marketing {
