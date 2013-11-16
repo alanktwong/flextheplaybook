@@ -40,23 +40,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Flex the Playbook</a>
+              <a class="navbar-brand" href="./index.html">Flex the Playbook</a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li id="home-nav-item" class="active"><a href="#">Home</a></li>
-                <li id="book-nav-item"><a href="#contact">Book</a></li>
-                <li id="assessment-nav-item" ><a href="#contact">Assessment</a></li>
-                <li id="events-nav-item"><a href="#contact">Events</a></li>
+              <ul id="navigationItems" class="nav navbar-nav">
+                <li id="home-nav-item" class="active"><a href="./index.html" class="navItem goHome">Home</a></li>
+                <li id="book-nav-item"><a href="javascript:void(0)" class="navItem showBook">Book</a></li>
+                <li id="assessment-nav-item" ><a href="javascript:void(0)" class="navItem showAssessment">Assessment</a></li>
+                <li id="events-nav-item"><a href="javascript:void(0)" class="navItem showEvents">Events</a></li>
                 <li class="dropdown">
-                  <a id="about-authors-nav-item" href="#" class="dropdown-toggle" data-toggle="dropdown">About Authors<b class="caret"></b></a>
+                  <a id="about-authors-nav-item" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">About Authors<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li id="jane-nav-item"><a href="#">Jane Hyun</a></li>
-                    <li id="audrey-nav-item"><a href="#">Audrey S Lee</a></li>
+                    <li id="jane-nav-item"><a href="javascript:void(0)" class="navItem showJane">Jane Hyun</a></li>
+                    <li id="audrey-nav-item"><a href="javascript:void(0)" class="navItem showAudrey">Audrey S Lee</a></li>
                   </ul>
                 </li>
-                <li id="blogs-nav-item"><a href="#contact">Blogs</a></li>
-                <li id="order-nav-item"><a href="#contact">Order Now</a></li>
+                <li id="blogs-nav-item"><a href="javascript:void(0)" class="navItem showBlog">Blogs</a></li>
+                <li id="order-nav-item"><a href="javascript:void(0)" class="navItem orderNow">Order Now</a></li>
               </ul>
             </div>
           </div>
@@ -68,7 +68,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
+    <div id="homePageCarousel" class="carousel slide homePage" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
@@ -83,14 +83,13 @@
           -->
           <div class="container">
             <div class="carousel-caption row">
-                <div class="col-md-5">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                   <img class="img-responsive" src="./assets/images/Flex.jpg" alt="Book image">
                 </div>
-                <div class="col-md-7">
-                  <h1><i>Flex: the New Playbook for Managing Across Differences</i></h1>
-                  <p>Available March 2013. Pre-order today</p>
-                  <p class="lead">Renowned executive coaches and global leadership strategists offer lessons on the vital skill of “Flexing”—the art of switching leadership styles to more effectively work with people who are different from you. This critical skill allows managers to navigate successfully the diverse business environment of today and tomorrow.</p>
-                  <p><a class="btn btn-lg btn-success" href="#" role="button">Find Out More &raquo;</a></p>
+                <div class="col-xs-7 col-sm-5 col-md-7 col-lg-7">
+                  <h1 class="row"><i>Flex: the New Playbook for Managing Across Differences</i></h1>
+                  <p class="row">Available March 2013. Pre-order today</p>
+                  <p class="row"><a class="btn btn-lg btn-success showBook" href="javascript:void(0)" role="button">Find Out More &raquo;</a></p>
                 </div>
             </div>
           </div>
@@ -103,7 +102,7 @@
             <div class="carousel-caption">
               <h1>Take the Assessment</h1>
               <p>Coming soon!</p>
-              <p><a class="btn btn-lg btn-danger" href="#" role="button">Link to assessment page</a></p>
+              <p><a class="btn btn-lg btn-danger showAssessment" href="javascript:void(0)" role="button">Link to assessment page</a></p>
             </div>
           </div>
         </div>
@@ -113,17 +112,17 @@
           -->
           <div class="container">
             <div class="carousel-caption row">
-              <div class="col-md-5">
+              <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <img class="featurette-image img-responsive" src="./assets/images/Jane-highres.jpg" alt="Jane Hyun">
               </div>
-              <div class="col-md-7">
+              <div class="col-xs-5 col-sm-5 col-md-7 col-lg-7">
                 <div class="row">
                   <img class="img-rounded invisible" data-src="holder.js/160x160" alt="Generic placeholder image">
                 </div>
                 <div class="row">
                   <h1>Meet Jane</h1>
                   <br/>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Author Bio &raquo;</a></p>
+                  <p><a class="btn btn-lg btn-primary showJane" href="javascript:void(0)" role="button">Author Bio &raquo;</a></p>
                 </div>
               </div>
             </div>
@@ -135,17 +134,17 @@
           -->
           <div class="container">
             <div class="carousel-caption row">
-                <div class="col-md-5">
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                   <img class="img-responsive" src="./assets/images/Audrey-106-highres.jpg" alt="Audrey Lee">
                 </div>
-                <div class="col-md-7">
+                <div class="col-xs-7 col-sm-5 col-md-7 col-lg-7">
                   <div class="row">
                     <img class="img-rounded invisible" data-src="holder.js/160x160" alt="Generic placeholder image">
                   </div>
                   <div class="row">
                     <h1>Meet Audrey</h1>
                     <br/>
-                    <p><a class="btn btn-lg btn-warning" href="#" role="button">Author Bio &raquo;</a></p>
+                    <p><a class="btn btn-lg btn-warning showAudrey" href="javascript:void(0)" role="button">Author Bio &raquo;</a></p>
                   </div>
                 </div>
             </div>
@@ -225,29 +224,29 @@
       <!-- /END THE FEATURETTES -->
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <div id="homePageBlurb" class="row homePage">
         <div id="assessment-blurb" class="col-lg-4">
           <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Take the Assessment</h2>
           <p>Are you a fluent leader? Find out!</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default showAssessment" href="javascript:void(0)" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div id="pre-order-blurb" class="col-lg-4">
           <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Pre-Order the Book</h2>
-          <p><a class="btn btn-default" href="#" role="button">Link to Amazon &raquo;</a></p>
+          <p><a class="btn btn-default showBook" href="javascript:void(0)" role="button">Link to Amazon &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div id="social-media-blurb" class="col-lg-4">
           <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Follow Us</h2>
-          <p><a class="btn btn-default" href="#" role="button">Link to all social media channels &raquo;</a></p>
+          <p><a class="btn btn-default" href="javascript:void(0)" role="button">Link to all social media channels &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Jane Hyun &amp; Audrey S Lee &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2013 Jane Hyun &amp; Audrey S Lee &middot; <a href="javascript:void(0)" class="showPrivacy">Privacy</a> &middot; <a href="javascript:void(0)" class="showTerms">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
