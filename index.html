@@ -31,7 +31,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div id="site-navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,19 +44,19 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#contact">Book</a></li>
-                <li><a href="#contact">Assessment</a></li>
-                <li><a href="#contact">Events</a></li>
+                <li id="home-nav-item" class="active"><a href="#">Home</a></li>
+                <li id="book-nav-item"><a href="#contact">Book</a></li>
+                <li id="assessment-nav-item" ><a href="#contact">Assessment</a></li>
+                <li id="events-nav-item"><a href="#contact">Events</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Authors<b class="caret"></b></a>
+                  <a id="about-authors-nav-item" href="#" class="dropdown-toggle" data-toggle="dropdown">About Authors<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Jane Hyun</a></li>
-                    <li><a href="#">Audrey S Lee</a></li>
+                    <li id="jane-nav-item"><a href="#">Jane Hyun</a></li>
+                    <li id="audrey-nav-item"><a href="#">Audrey S Lee</a></li>
                   </ul>
                 </li>
-                <li><a href="#contact">Blogs</a></li>
-                <li><a href="#contact">Order Now</a></li>
+                <li id="blogs-nav-item"><a href="#contact">Blogs</a></li>
+                <li id="order-nav-item"><a href="#contact">Order Now</a></li>
               </ul>
             </div>
           </div>
@@ -71,26 +71,37 @@
     <div id="homePageCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homePageCarousel" data-slide-to="1"></li>
+        <li data-target="#homePageCarousel" data-slide-to="2"></li>
+        <li data-target="#homePageCarousel" data-slide-to="3"></li>
+        <li data-target="#homePageCarousel" data-slide-to="4"></li>
+        <li data-target="#homePageCarousel" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item active">
-          <img src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="1st slide">
+        <div id="book_slide" class="item active">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:1st slide bg" alt="1st slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
-              <h1>Book Details Page.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Link to Book Details Page</a></p>
+              <div id="new_slide" class="row">
+                <div class="col-md-5">
+                  <img class="featurette-image img-responsive" src="./assets/images/Flex.jpg" alt="Book image">
+                </div>
+                <div class="col-md-7">
+                  <h1>Book Details Page.</h1>
+                  <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Link to Book Details Page</a></p>
+                </div>
+             </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="2nd slide">
+        <div id="assessment_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:2nd slide bg" alt="2nd slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Take the Assessment.</h1>
@@ -99,8 +110,10 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="3rd slide">
+        <div id="events_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:3rd slide bg" alt="3rd slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
               <h1>What we've been up to lately.</h1>
@@ -109,8 +122,10 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fourth slide" alt="4th slide">
+        <div id="jane_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:4th slide bg" alt="4th slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Jane Hyun.</h1>
@@ -119,8 +134,10 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Fifth slide" alt="5th slide">
+        <div id="audrey_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:5th slide bg" alt="5th slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Audrey S Lee</h1>
@@ -129,8 +146,10 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Sixth slide" alt="6th slide">
+        <div id="blog_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:6th slide bg" alt="6th slide background">
+          -->
           <div class="container">
             <div class="carousel-caption">
               <h1>Blog</h1>
@@ -140,7 +159,7 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#homePageCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="left  carousel-control" href="#homePageCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#homePageCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
@@ -150,13 +169,13 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing">
+    <div id="marketing-content" class="container marketing">
 
 
 
       <!-- START THE FEATURETTES -->
 
-      <div id="book_details" class="row featurette" data-isbn="978-0-06-224852-7">
+      <div id="book_details" class="row featurette hidden" data-isbn="978-0-06-224852-7">
         <div class="col-md-5">
           <img class="featurette-image img-responsive" src="./assets/images/Flex.jpg" alt="Book image">
         </div>
@@ -214,19 +233,19 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+        <div id="assessment-blurb" class="col-lg-4">
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Take the Assessment</h2>
           <p>Are you a fluent leader? Find out!</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+        <div id="pre-order-blurb" class="col-lg-4">
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Pre-Order the Book</h2>
           <p><a class="btn btn-default" href="#" role="button">Link to Amazon &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/140x140" alt="Generic placeholder image">
+        <div id="social-media-blurb" class="col-lg-4">
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
           <h2>Follow Us</h2>
           <p><a class="btn btn-default" href="#" role="button">Link to all social media channels &raquo;</a></p>
         </div><!-- /.col-lg-4 -->

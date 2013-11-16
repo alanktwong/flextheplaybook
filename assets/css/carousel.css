@@ -23,18 +23,20 @@ body {
     padding-right: 15px;
 }
 .carousel {
-    height: 500px;
+    height: 600px;
     margin-bottom: 60px;
 }
 .carousel-caption {
     z-index: 10;
 }
+
 .carousel .item {
-    background-color: #777777;
-    height: 500px;
+    background-color: #4a4a4a;
+    height: 600px;
 }
+
 .carousel-inner > .item > img {
-    height: 500px;
+    height: 600px;
     left: 0;
     min-width: 100%;
     position: absolute;
@@ -58,6 +60,7 @@ body {
 .featurette-divider {
     margin: 80px 0;
 }
+
 .featurette-heading {
     font-weight: 300;
     letter-spacing: -1px;
@@ -66,38 +69,38 @@ body {
 
 @media (min-width: 768px) {
 
-.marketing {
-    padding-left: 0;
-    padding-right: 0;
-}
-.navbar-wrapper {
-    margin-top: 20px;
-}
-.navbar-wrapper .container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.navbar-wrapper .navbar {
-    padding-left: 0;
-    padding-right: 0;
-}
-.navbar-wrapper .navbar {
-    border-radius: 4px;
-}
-.carousel-caption p {
-    font-size: 21px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
-.featurette-heading {
-    font-size: 50px;
-}
+	.marketing {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.navbar-wrapper {
+	    margin-top: 20px;
+	}
+	.navbar-wrapper .container {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.navbar-wrapper .navbar {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.navbar-wrapper .navbar {
+	    border-radius: 4px;
+	}
+	.carousel-caption p {
+	    font-size: 21px;
+	    line-height: 1.4;
+	    margin-bottom: 20px;
+	}
+	.featurette-heading {
+	    font-size: 50px;
+	}
 
 }
 @media (min-width: 992px) {
 	
-.featurette-heading {
-    margin-top: 120px;
-}
+	.featurette-heading {
+	    margin-top: 120px;
+	}
 
 }
