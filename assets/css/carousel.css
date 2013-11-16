@@ -7,6 +7,10 @@ body {
 	display:none;
 }
 
+.invisible {
+	visibility:hidden;
+}
+
 .navbar-wrapper {
     left: 0;
     position: absolute;
@@ -23,7 +27,7 @@ body {
     padding-right: 15px;
 }
 .carousel {
-    height: 600px;
+    height: 650px;
     margin-bottom: 60px;
 }
 .carousel-caption {
@@ -31,12 +35,12 @@ body {
 }
 
 .carousel .item {
-    background-color: #4a4a4a;
-    height: 600px;
+    background-color: #00004a;
+    height: 650px;
 }
 
 .carousel-inner > .item > img {
-    height: 600px;
+    height: 650px;
     left: 0;
     min-width: 100%;
     position: absolute;
