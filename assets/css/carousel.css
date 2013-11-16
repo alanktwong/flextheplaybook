@@ -1,8 +1,12 @@
-
 body {
     color: #5A5A5A;
     padding-bottom: 40px;
 }
+
+.hidden {
+	display:none;
+}
+
 .navbar-wrapper {
     left: 0;
     position: absolute;
