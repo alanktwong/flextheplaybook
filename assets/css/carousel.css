@@ -39,13 +39,11 @@ body {
     height: 650px;
 }
 
-.carousel-inner > .item > img {
-    height: 650px;
-    left: 0;
-    min-width: 100%;
-    position: absolute;
-    top: 0;
+.carousel-img {
+    width:182px;
+    height:274px;
 }
+
 .marketing {
     padding-left: 15px;
     padding-right: 15px;
@@ -72,7 +70,15 @@ body {
 }
 
 #bookDetailsImage {
-	padding: 60px 60px 60px 60px;
+	padding: 80px 60px 60px 60px;
+}
+
+#audreyBioImage {
+	padding: 100px 60px 60px 60px;
+}
+
+#janeBioImage {
+	padding: 100px 80px 80px 80px;
 }
 
 @media (min-width: 768px) {
