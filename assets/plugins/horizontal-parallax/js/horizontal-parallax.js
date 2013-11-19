@@ -8,7 +8,9 @@ $(document).ready(function(){
     };
     var sequence = $("#sequence").sequence(options).data("sequence");
 
-    sequence.afterLoaded = function(){
-        $(".prev, .next").fadeIn(500);
+    if (sequence) {
+        sequence.afterLoaded = function(){
+            $(".prev, .next").fadeIn(500);
+        }
     }
 });
