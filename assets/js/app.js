@@ -5,8 +5,7 @@
  * Author: Html Stream
  * Website: http://htmlstream.com/preview/unify
 */
-
-var App = function () {
+var App = function ($,_) {
 
     function handleIEFixes() {
         //fix html5 placeholder attribute for ie7 & ie8
@@ -188,4 +187,4 @@ var App = function () {
 
     };
 
-}();
+}(jQuery,_);
