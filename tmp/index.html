@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+    <title>Flex the Playbook</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="./assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div id="site-navbar" class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="./index.html">Flex: the New Playbook for Managing Across Differences</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul id="navigationItems" class="nav navbar-nav">
+                <li id="home-nav-item" class="active"><a href="./index.html" class="navItem goHome">Home</a></li>
+                <li id="book-nav-item"><a href="javascript:void(0)" class="navItem showBook">Book</a></li>
+                <li id="assessment-nav-item" ><a href="javascript:void(0)" class="navItem showAssessment">Fluent Leader Inventory</a></li>
+                <li id="events-nav-item"><a href="javascript:void(0)" class="navItem showEvents">Events</a></li>
+                <li class="dropdown">
+                  <a id="about-authors-nav-item" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">About Authors<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li id="jane-nav-item"><a href="javascript:void(0)" class="navItem showJane">Jane Hyun</a></li>
+                    <li id="audrey-nav-item"><a href="javascript:void(0)" class="navItem showAudrey">Audrey S. Lee</a></li>
+                  </ul>
+                </li>
+                <li id="blogs-nav-item"><a href="javascript:void(0)" class="navItem showBlog">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="homePageCarousel" class="carousel slide homePage" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#homePageCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homePageCarousel" data-slide-to="1"></li>
+        <li data-target="#homePageCarousel" data-slide-to="2"></li>
+        <li data-target="#homePageCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div id="book_slide" class="item active">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:1st slide bg" alt="1st slide background">
+          -->
+          <div class="container">
+            <div class="carousel-caption row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img class="img-rounded carousel-img" src="./assets/images/Flex.jpg" alt="Flex the New Playbook">
+                <h1><i>Flex: the New Playbook for Managing Across Differences</i></h1>
+                <p>Available March 2014. Pre-order today</p>
+                <p><a class="btn btn-lg btn-success showBook" href="javascript:void(0)" role="button">Find Out More &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="assessment_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:2nd slide bg" alt="2nd slide background">
+          -->
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Take the Fluent Leader Inventory</h1>
+                <p>Coming soon!</p>
+                <p><a class="btn btn-lg btn-danger showAssessment" href="javascript:void(0)" role="button">Find out more about the Fluent Leader Inventory</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="jane_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:4th slide bg" alt="4th slide background">
+          -->
+          <div class="container">
+            <div class="carousel-caption row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img class="img-rounded carousel-img" src="./assets/images/Jane-highres.jpg" alt="Jane Hyun"/>
+                <h1>Meet Jane</h1>
+                <br/>
+                <p><a class="btn btn-lg btn-primary showJane" href="javascript:void(0)" role="button">Jane's Bio &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="audrey_slide" class="item">
+          <!--
+          <img data-src="holder.js/900x600/auto/#444:#4a4a4a/text:5th slide bg" alt="5th slide background">
+          -->
+          <div class="container">
+            <div class="carousel-caption row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img class="img-rounded carousel-img" src="./assets/images/Audrey-106-highres.jpg" alt="Audrey Lee"/>
+                  <h1>Meet Audrey</h1>
+                  <br/>
+                  <p><a class="btn btn-lg btn-warning showAudrey" href="javascript:void(0)" role="button">Audrey's Bio &raquo;</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left  carousel-control" href="#homePageCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#homePageCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div id="marketing-content" class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <!-- Book details -->
+      <div id="book_details" class="row featurette hidden" data-isbn="978-0-06-224852-7">
+        <div class="col-md-5">
+          <img id="bookDetailsImage" class="featurette-image img-responsive" src="./assets/images/Flex.jpg" alt="Book image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Flex <span class="text-muted">The New Playbook for Managing Across Differences.</span></h2>
+          <div class="buy-btn-group">
+              <a href="http://www.amazon.com/Flex-Playbook-Managing-Across-Differences-ebook/dp/B00BATKYXI">
+                <img class="buy-from-amazon" src="./assets/images/buy_from_amazon.gif" alt="Buy from Amazon"/>
+              </a>
+              <a class="btn btn-success" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Barnes &amp; Noble</a>
+              <!--
+              <a class="btn btn-default" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Pre Order from 800 CEO READ</a>
+              -->
+          </div>
+          <p class="lead">Renowned executive coaches and global leadership strategists offer lessons on the vital skill of “Flexing”—the art of switching leadership styles to more effectively work with people who are different from you. This critical skill allows managers to navigate successfully the diverse business environment of today and tomorrow.</p>
+          <p>The workplace around the world is changing -- growing increasingly multicultural, female, and younger. Experts often tell CEOs and managers what NOT to do, and corporate diversity programs can feel like defensive measures against lawsuits and harassment charges. While technology has connected all of us as a global workforce, it has not equipped us with the capability to interact genuinely with people around the globe.  We need the ability to build the trust required to achieve great outcomes in our workplaces by working with those who are different from us</p>
+          <p>In order to be successful in this new global business environment, we need to re-think the way we lead and connect with others.</p>
+          <p>Flex offers this new approach—a proactive strategy for managers to understand and leverage differences effectively in this new global economy.</p>
+          <p>Flex shows managers how to:</p>
+          <ul>
+              <li>Understand the Power Gap, the social distance between you and those in the workplace of different cultures, ages, and gender.</li>
+              <li>Flex your management style by stretching how you work and communicate with others.</li>
+              <li>Bridge the gap with more effective communication and practical feedback tools.</li>
+              <li>Multiply the effect, by teaching these skills to others and closing the power gap with clients, customers, and partners to create innovative solutions</li>
+          </ul>
+          <p>Creating flex in a company’s management style will impact all aspects of developing the talent you have, attracting future talent and building relationships with customers in this competitive marketplace. Flex will show you how.</p>
+        </div>
+      </div>
+
+      <!-- Jane's Bio -->
+      <div id="jane_bio" class="row featurette hidden">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Jane Hyun</h2>
+          <p>Jane Hyun is an internationally renowned executive coach and leadership strategist to Fortune 500 companies, top MBA programs, and non-profit organizations. In addition to coaching professionals to maximize their potential and advance their careers, she advises senior management teams and diversity councils on building effective dispersed, multicultural teams and the critical role of the global talent pipeline. The firm's Cultural Fluency Roundtables and Bamboo Ceiling® Series leadership coaching programs has garnered praise from global Fortune 100 companies in the U.S. and in key global markets.</p>
+          <p>Previously, Jane was Vice President of Human Resources/Talent Development at JP Morgan, and Director of Recruiting at Deloitte &amp; Touche and Resources Global.</p>
+          <p>A graduate of Cornell University with a degree in Economics and International Studies, she is active with the Cornell Women’s Alumnae Council. She is also an Advisor to the Toigo Foundation and the Hidden Brain Drain Task Force/Center for Talent Innovation, researchers of recent Harvard Business Review studies "Leadership in Your Midst"  "The Sponsor Effect"  "The Athena Factor", and "Off-Ramps and On-Ramps."</p>
+          <p>Her firm's approach to global business and talent development has received international recognition, and she has appeared in a variety of media outlets, including CNN, CNBC, NPR, Time, Fortune, CEO, Working Mother, and Crains.  HarperCollins released her groundbreaking book, "Breaking the Bamboo Ceiling: The Essential Guide to Getting In, Moving Up, and Reaching the Top."  Jane lives in New York City and enjoys helping people reach their full potential in the workplace and community.  She is currently working on her next writing project.</p>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img id="janeBioImage" class="featurette-image img-responsive" src="./assets/images/Jane-highres.jpg" alt="Jane Hyun">
+        </div>
+      </div>
+
+      <!-- Audrey's Bio -->
+      <div id="audrey_bio" class="row featurette hidden">
+        <div class="col-md-5">
+          <img id="audreyBioImage" class="featurette-image img-responsive" src="./assets/images/Audrey-106-highres.jpg" alt="Audrey Lee">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Audrey S. Lee</h2>
+          <p>Audrey S. Lee is an executive coach and global leadership &amp; diversity strategist, who consults with Fortune 500 companies to develop integrated leadership strategies that impact business practices throughout the organization. She expertly combines program facilitation, coaching, and leadership consulting practice with more than thirteen years of experience in marketing communications, product/program strategy, alliance and channel marketing. A seasoned stage performer of more than 20 years, she also integrates her on-stage experiences with her business and coaching strategies to create global programs that focus on effective communications and presentation skills.</p>
+          <p>With her unique background, Audrey is a frequent speaker at international conferences, corporate initiatives, and community events. Her clients include professionals at Fortune 500 companies and entrepreneurial start-up enterprises, in a variety of industries including financial services, high-tech, media/communications, automotive and consumer products. She is the co-author of Hyun &amp; Associates’  “Through the Bamboo Ceiling®” Training Series and other highly-acclaimed leadership initiatives. As a Certified Boardroom Bound &reg; Boardology&trade; Coach, she is also an advocate for building minority talent pipeline for corporate board roles.  She is a graduate of Georgetown University’s Executive Certification Program in Leadership Coaching (accredited by the International Coaching Federation), and also holds degrees in Spanish and Music from Indiana University (Bloomington, IN).</p>
+        <p>Audrey currently maintains her own leadership practice, is a Senior Consultant at Hyun &amp; Associates. Previously, she was Principal and Vice President of Hyun &amp; Associates, Prior her career in diversity and leadership development, she managed key marketing initiatives in small and large high technology companies such as Adaptec, Fujitsu Computer Products of America, Network Peripherals, Philips Semiconductors, Philips Components and Raychem. In 1999, she began her own marketing practice, working with clients in multimedia, storage solutions and application service provider (ASP) industries.</p>
+        <p>A second-generation Chinese-American, she lives in New York City where she serves on the Advisory Board for the New York Asian Women’s Center (NYAWC), an organization that helps battered women overcome violence, and also works to raise public awareness about domestic violence, advocate for the rights of battered women, and create an agenda for social change.</p>
+        </div>
+      </div>
+
+      <!-- Assessment Landing Page -->
+      <div id="assessment_lp" class="row featurette hidden">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Fluent Leader Inventory</h2>
+          <p>Coming soon!</p>
+        </div>
+      </div>
+      <!-- Events Landing Page -->
+      <div id="events_lp" class="row featurette hidden">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Events</h2>
+          <p>Coming soon!</p>
+        </div>
+      </div>
+      <!-- Blog Landing Page -->
+      <div id="blog_lp" class="row featurette hidden">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Blog</h2>
+          <p>Coming soon!</p>
+        </div>
+      </div>
+      <!-- Privacy Landing Page -->
+      <div id="privacy_lp" class="row featurette hidden">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Privacy</h2>
+          <p>Coming soon!</p>
+        </div>
+      </div>
+      <!-- Terms Landing Page -->
+      <div id="terms_lp" class="row featurette hidden">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Terms</h2>
+          <p>Coming soon!</p>
+        </div>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- Three columns of text below the carousel -->
+      <div id="homePageBlurb" class="row homePage">
+        <div id="assessment-blurb" class="col-lg-4">
+          <!--
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+          -->
+          <h2>Take the Fluent Leader Inventory</h2>
+          <p>Are you a fluent leader? Find out!</p>
+          <p><a class="btn btn-default showAssessment" href="javascript:void(0)" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div id="pre-order-blurb" class="col-lg-4">
+          <!--
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+          -->
+          <h2>Pre-Order the Book</h2>
+             <div class="buy-btn-group">
+               <a href="http://www.amazon.com/Flex-Playbook-Managing-Across-Differences-ebook/dp/B00BATKYXI">
+                 <img class="buy-from-amazon" src="./assets/images/buy_from_amazon.gif" alt="Buy from Amazon"/>
+               </a>
+               <a class="btn btn-success" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Barnes &amp; Noble</a>
+               <!--
+               <a class="btn btn-default" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Pre Order from 800 CEO READ</a>
+               -->
+             </div>
+        </div><!-- /.col-lg-4 -->
+        <div id="social-media-blurb" class="col-lg-4">
+          <!--
+          <img class="img-rounded" data-src="holder.js/140x140" alt="Generic placeholder image">
+          -->
+          <h2>Follow Us</h2>
+          <a href="http://twitter.com/Audrey_S_Lee" class="btn btn-default btn-lg" role="button">
+              <span class="glyphicon glyphicon-star"/></span>&nbsp;@Audrey_S_Lee
+          </a>
+          <a href="http://twitter.com/JaneHyun" class="btn btn-default btn-lg" role="button">
+              <span class="glyphicon glyphicon-star"/></span>&nbsp;@JaneHyun
+          </a>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Jane Hyun &amp; Audrey S. Lee &middot; <a href="javascript:void(0)" class="showPrivacy">Privacy</a> &middot; <a href="javascript:void(0)" class="showTerms">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="./assets/js/holder.js"></script>
+    <script src="./assets/js/jquery/jquery.log4jq.js"></script>
+    <script src="./assets/js/jquery/jquery.pubsub.js"></script>
+    <script src="./assets/js/jquery/jquery.store.js"></script>
+
+    <script src="./assets/js/flex.js"></script>
+  </body>
+</html>
