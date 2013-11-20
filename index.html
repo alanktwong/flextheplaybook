@@ -31,36 +31,38 @@
 </head> 
 
 <body>
-<!--=== Style Switcher ===-->    
-<i class="style-switcher-btn icon-cogs hidden-xs"></i>
-<div class="style-switcher">
-    <div class="theme-close"><i class="icon-remove"></i></div>
-    <div class="theme-heading">Theme Colors</div>
-    <ul class="list-unstyled">
-        <li class="theme-default theme-active" data-style="default" data-header="light"></li>
-        <li class="theme-blue" data-style="blue" data-header="light"></li>
-        <li class="theme-orange" data-style="orange" data-header="light"></li>
-        <li class="theme-red" data-style="red" data-header="light"></li>
-        <li class="theme-light last" data-style="light" data-header="light"></li>
-    </ul>
-    <div style="margin-bottom:18px;"></div>
-    <div class="theme-heading">Layouts</div>
-    <div class="text-center">
-        <a href="#" class="btn-u btn-u-green btn-block active-switcher-btn wide-layout-btn">Wide</a>
-        <a href="#" class="btn-u btn-u-green btn-block boxed-layout-btn">Boxed</a>
-    </div>
-</div><!--/style-switcher-->
+<!--=== Style Switcher ===-->
+<div class="hidden">
+	<i class="style-switcher-btn icon-cogs hidden-xs"></i>
+	<div class="style-switcher">
+	    <div class="theme-close"><i class="icon-remove"></i></div>
+	    <div class="theme-heading">Theme Colors</div>
+	    <ul class="list-unstyled">
+	        <li class="theme-default" data-style="default" data-header="light"></li>
+	        <li class="theme-blue theme-active" data-style="blue" data-header="light"></li>
+	        <li class="theme-orange" data-style="orange" data-header="light"></li>
+	        <li class="theme-red" data-style="red" data-header="light"></li>
+	        <li class="theme-light last" data-style="light" data-header="light"></li>
+	    </ul>
+	    <div style="margin-bottom:18px;"></div>
+	    <div class="theme-heading">Layouts</div>
+	    <div class="text-center">
+	        <a href="#" class="btn-u btn-u-green btn-block active-switcher-btn wide-layout-btn">Wide</a>
+	        <a href="#" class="btn-u btn-u-green btn-block boxed-layout-btn">Boxed</a>
+	    </div>
+	</div><!--/style-switcher-->
+</div>
 <!--=== End Style Switcher ===-->    
 
 <!--=== Top ===-->    
 <div class="top">
     <div class="container">         
         <ul class="loginbar pull-right">
-            <li><a href="page_faq.html">Help</a></li>  
+            <li><a href="./index.html">Help</a></li>  
             <li class="devider"></li>   
-            <li><a href="page_privacy.html">Privacy</a></li>   
+            <li><a href="./index.html">Privacy</a></li>   
             <li class="devider"></li>   
-            <li><a href="page_terms.html">Terms</a></li>   
+            <li><a href="./index.html">Terms</a></li>   
         </ul>
     </div>      
 </div><!--/top-->
@@ -128,28 +130,28 @@
                 <div class="info">
                     <h2><i>Flex: the New Playbook for Managing across Differences</i></h2>
                     <p>Available March 2014. Pre-order today</p>
-                    <p><a class="btn btn-lg showBook" href="javascript:void(0)">Find Out More &raquo;</a></p>
+                    <p><a class="btn btn-lg showBook" href="./flex.html">Find Out More &raquo;</a></p>
                 </div>
             </li>
             <li>
                 <div class="info">
                     <h2>Introducing the Fluent Leader Inventory</h2>
                     <p>Coming soon!</p>
-                    <p><a class="btn btn-lg showAssessment" href="javascript:void(0)">Find out more about the Fluent Leader Inventory</a></p>
+                    <p><a class="btn btn-lg showAssessment" href="./fluent_leader_inventory.html">Find out more about the Fluent Leader Inventory</a></p>
                 </div>
                 <img class="aeroplane" src="assets/plugins/horizontal-parallax/images/aeroplane.png" alt="Aeroplane" />
             </li>
             <li>
                 <div class="info">
                     <h2>Meet Jane</h2>
-                    <p><a class="btn btn-lg showJane" href="javascript:void(0)">Jane's Bio &raquo;</a></p>
+                    <p><a class="btn btn-lg showJane" href="./meet_jane_hyun.html">Jane's Bio &raquo;</a></p>
                 </div>
                 <img class="kite" src="assets/plugins/horizontal-parallax/images/kite.png" alt="Kite" />
             </li>
             <li>
                 <div class="info">
                     <h2>Meet Audrey</h2>
-                    <p><a class="btn btn-lg showJane" href="javascript:void(0)">Audrey's Bio &raquo;</a></p>
+                    <p><a class="btn btn-lg showJane" href="./meet_audrey_lee.html">Audrey's Bio &raquo;</a></p>
                 </div>
                 <img class="balloon" src="assets/plugins/horizontal-parallax/images/balloon.png" alt="Balloon" />
             </li>
@@ -167,7 +169,13 @@
                 <p>Renowned executive coaches and global leadership strategists offer lessons on the vital skill of “Flexing”—the art of switching leadership styles to more effectively work with people who are different from you. This critical skill allows managers to navigate successfully the diverse business environment of today and tomorrow.</p>
             </div>            
             <div class="col-md-3">
-                <a href="#" class="btn-buy hover-effect">Pre Order Now</a>
+                <a href="http://www.amazon.com/Flex-Playbook-Managing-Across-Differences-ebook/dp/B00BATKYXI">
+                    <img class="buy-from-amazon" src="./assets/img/book/buy_from_amazon.gif" alt="Buy from Amazon"/>
+                </a>
+                <a class="btn btn-success" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Barnes &amp; Noble</a>
+                <!--
+                <a class="btn btn-default" role="button" href="http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076">Pre Order from 800 CEO READ</a>
+                -->
             </div>
         </div>
     </div>
@@ -218,7 +226,7 @@
             <div class="col-md-6">
                 <p class="copyright-space">
                     2013 &copy; Audrey S. Lee &amp; Jane Hyun ALL Rights Reserved. 
-                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                    <a href="./index.html">Privacy Policy</a> | <a href="./index.html">Terms of Service</a>
                 </p>
             </div>
             <div class="col-md-6">  
