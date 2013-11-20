@@ -82,6 +82,18 @@ img.img-circle {
    margin-bottom: 15px;
 }
 
+/* Logo
+------------------------------------*/
+.flex-logo-header {
+	height: 40px;
+	width: 100px;
+}
+
+.flex-logo-footer {
+	height:40px;
+	width:100px;
+}
+
 /*Navigation
 ------------------------------------*/
 /*Pagination*/
