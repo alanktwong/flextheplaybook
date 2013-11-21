@@ -94,6 +94,13 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   position: relative;
   max-width: 1400px;
 }
+
+#sequence-theme ul {
+	list-style:none;
+}
+
+/* Info
+------------------------------------*/
 #sequence-theme .info {
   font-size: 1.5em;
   right: 150%;
@@ -140,6 +147,9 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   -o-transition-duration: 4s;
   transition-duration: 4s;
 }
+
+/* Balloon
+------------------------------------*/
 #sequence-theme .balloon {
   left: -140%;
   top: 150px;
@@ -181,6 +191,98 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   -o-transition-property: left top;
   transition-property: left top;
 }
+
+
+/* Book
+------------------------------------*/
+#sequence-theme .book {
+  left: -140%;
+  top: 150px;
+  max-width: 17%;
+  z-index: 6;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+}
+#sequence-theme .animate-in .book {
+  left: 15%;
+  top: 70px;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -ms-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+  z-index: 4;
+}
+#sequence-theme .animate-out .book {
+  left: 140%;
+  top: -30px;
+  z-index: 2;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -ms-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+}
+
+/* Author
+------------------------------------*/
+#sequence-theme .author {
+  left: -140%;
+  top: 150px;
+  max-width: 25%;
+  z-index: 6;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+}
+#sequence-theme .animate-in .author {
+  left: 15%;
+  top: 70px;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -ms-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+  z-index: 4;
+}
+#sequence-theme .animate-out .author {
+  left: 140%;
+  top: -30px;
+  z-index: 2;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -ms-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-property: left top;
+  -moz-transition-property: left top;
+  -ms-transition-property: left top;
+  -o-transition-property: left top;
+  transition-property: left top;
+}
+
+/* Aeroplane
+------------------------------------*/
 #sequence-theme .aeroplane {
   left: -50%;
   max-width: 40%;
@@ -232,6 +334,8 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   transition-property: left top transform;
   z-index: 2;
 }
+/* Sky
+------------------------------------*/
 #sequence-theme .sky {
   height: auto;
   width: 100%;
@@ -278,6 +382,8 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   -o-transition-property: left top;
   transition-property: left top;
 }
+/* Kite
+------------------------------------*/
 #sequence-theme .kite {
   left: -30%;
   opacity: 0;
@@ -351,6 +457,4 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 unless otherwise s
   left: 20%;
   top: 200px;
 }
-#sequence-theme ul {
-	list-style:none;
-}
+
