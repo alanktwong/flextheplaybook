@@ -2,14 +2,14 @@
 ------------------------------------*/
 /*Navbar*/
 .header .navbar-default .navbar-nav > .active > a {
-	color: #e74c3c;
+	color: #e70000;
 }
 
 /*Navber Toggle*/
 .navbar-toggle,
 .navbar-default .navbar-toggle:hover, 
 .navbar-default .navbar-toggle:focus {
-	background: #e74c3c;
+	background: #e70000;
 }
 
 .navbar-toggle:hover {
@@ -22,8 +22,8 @@
 
 /*Serach Box*/
 .header .navbar .nav > li > a.search:hover {
-	color: #e74c3c;
-	border-bottom-color: #e74c3c;
+	color: #e70000;
+	border-bottom-color: #e70000;
 }
 
 /*Responsive @Media 
@@ -32,18 +32,18 @@
 	/*Navbar*/
 	.header .navbar-default .navbar-nav > li > a:hover,
 	.header .navbar-default .navbar-nav > .active > a {
-		border-bottom: solid 2px #e74c3c;
+		border-bottom: solid 2px #e70000;
 	}
 
 	.header .navbar-default .navbar-nav > .open > a,
 	.header .navbar-default .navbar-nav > .open > a:hover,
 	.header .navbar-default .navbar-nav > .open > a:focus {
-		color: #e74c3c;
+		color: #e70000;
 	}
 
 	/*Dropdown Menu*/
 	.header .dropdown-menu { 
-		border-top: solid 2px #e74c3c; 
+		border-top: solid 2px #e70000; 
 	}
 
 }

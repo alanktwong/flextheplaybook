@@ -84,6 +84,7 @@ var App = function ($,_) {
                 $('#logo-footer').attr("src", "assets/img/logo2-" + color + ".png");
             } else if(data_header == 'book') {
                 $('#style_color-header-1').attr("href", "assets/css/themes/headers/header1-" + color + ".css");
+                $('#logo-header').addClass('color-red');
             }
         }
     }
