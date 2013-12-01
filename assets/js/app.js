@@ -7,6 +7,49 @@
 */
 var App = function ($,_) {
 
+    var _data = {
+        site: {
+            sitePage: "www.flextheplaybook.com",
+            description: "the art of switching leadership styles to more effectively work with people who are different from you",
+            keywords: "flex,playbook,cultural diversity,management,leadership,global,cultural fluency,diversity",
+            author: "Audrey S. Lee and Jane Hyun",
+            about: "This is the website for the book, <i>Flex: the New Playbook for Managing Across Differences</i>.",
+            email : "flex.the.playbook@gmail.com"
+        },
+        copyright : {
+            date: "2013",
+            description: "2013 &copy; Audrey S. Lee &amp; Jane Hyun ALL Rights Reserved"
+        },
+        book: {
+            title: "Flex: the Playbook for Managing Across Differences",
+            sitePage: "www.flextheplaybook.com/flex.html",
+            isbn10: "0062248529",
+            isbn13: "978-0062248527",
+            asin: "B00BATKYXI",
+            printLength: "336 pages",
+            publisher: "HarperBusiness",
+            publishDate: "March 18, 2014",
+            distributionChannels: {
+                amazon: "http://www.amazon.com/Flex-Playbook-Managing-Across-Differences-ebook/dp/B00BATKYXI",
+                barnesNoble: "http://www.barnesandnoble.com/w/flex-jane-hyun/1114591076"
+            }
+        },
+        authors: {
+            jane: {
+                name: "Jane Hyun",
+                sitePage: "www.flextheplaybook.com/meet_jane_hyun.html",
+                linkedIn: "http:///www.linkedin.com/pub/jane-hyun/2/116/628/",
+                twitter: "http://twitter.com/JaneHyun"
+            },
+            audrey : {
+                name: "Audrey S. Lee",
+                sitePage: "www.flextheplaybook.com/meet_audrey_lee.html",
+                linkedIn: "http://www.linkedin.com/in/audreyslee",
+                twitter: "http://twitter.com/Audrey_S_Lee"
+            }
+        }
+    };
+    
     function handleIEFixes() {
         //fix html5 placeholder attribute for ie7 & ie8
         if ($.browser.msie && $.browser.version.substr(0, 1) < 9) { // ie7&ie8
@@ -103,6 +146,7 @@ var App = function ($,_) {
     }
 
     return {
+        data: _data,
         init: function () {
             handleBootstrap();
             handleIEFixes();
