@@ -19,6 +19,7 @@
 
 # Eclipse #
 ############
+.project
 target/
 bin/
 bin-debug/
